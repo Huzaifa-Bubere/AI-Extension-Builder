@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+  <title>Extension AI Builder</title>
+
+  <link
+    rel="stylesheet"
+    href="popup.css">
+</head>
+
+<body>
+
+  <header class="topbar">
+
+    <div>
+      <div class="logo">
+        ⚡ Extension AI
+      </div>
+
+      <div class="subtitle">
+        Build extensions with AI
+      </div>
+    </div>
+
+    <button
+      id="settingsButton"
+      class="iconButton">
+      ⚙
+    </button>
+
+  </header>
+
+  <main>
+
+    <section class="hero">
+
+      <h1>
+        What do you want to build?
+      </h1>
+
+      <p>
+        Describe your Chrome extension
+        in plain English.
+      </p>
+
+      <textarea
+        id="prompt"
+        placeholder="Example: Build an extension that blocks distracting websites, tracks time spent on each website, and shows a daily dashboard..."
+      ></textarea>
+
+      <button
+        id="buildButton"
+        class="primary">
+        <span>⚡</span>
+        Build Extension
+      </button>
+
+    </section>
+
+    <section
+      id="examples"
+      class="examples">
+
+      <button class="example">
+        Website blocker with
+        daily usage statistics
+      </button>
+
+      <button class="example">
+        Save selected text
+        as personal notes
+      </button>
+
+      <button class="example">
+        AI webpage summarizer
+      </button>
+
+      <button class="example">
+        Tab manager with
+        groups and search
+      </button>
+
+    </section>
+
+    <section
+      id="status"
+      class="status hidden">
+
+      <div
+        id="spinner"
+        class="spinner">
+      </div>
+
+      <div>
+        <strong id="statusTitle">
+          Building...
+        </strong>
+
+        <p id="statusText">
+          AI is generating your files.
+        </p>
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="popup.js"></script>
+
+</body>
+</html>

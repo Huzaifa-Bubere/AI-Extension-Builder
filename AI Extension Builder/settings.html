@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1">
+
+  <title>Extension AI Settings</title>
+
+  <link
+    rel="stylesheet"
+    href="settings.css">
+</head>
+
+<body>
+
+  <main class="container">
+
+    <header>
+      <h1>⚡ Extension AI</h1>
+
+      <p>
+        Configure your AI provider.
+      </p>
+    </header>
+
+    <section class="card">
+
+      <label>
+        OpenAI API Key
+      </label>
+
+      <input
+        id="apiKey"
+        type="password"
+        placeholder="sk-..."
+        autocomplete="off">
+
+      <p class="help">
+        Your key is stored in Chrome
+        local extension storage.
+      </p>
+
+    </section>
+
+    <section class="card">
+
+      <label>
+        Model
+      </label>
+
+      <select id="model">
+
+        <option value="gpt-5.6-luna">
+          GPT-5.6 Luna
+        </option>
+
+        <option value="gpt-5.6">
+          GPT-5.6
+        </option>
+
+      </select>
+
+    </section>
+
+    <button
+      id="save"
+      class="save">
+      Save Settings
+    </button>
+
+    <div
+      id="status"
+      class="status">
+    </div>
+
+  </main>
+
+  <script src="settings.js"></script>
+
+</body>
+</html>

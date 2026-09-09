@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1">
+
+  <title>Extension AI Editor</title>
+
+  <link
+    rel="stylesheet"
+    href="editor.css">
+</head>
+
+<body>
+
+  <header class="toolbar">
+
+    <div class="brand">
+      ⚡ Extension AI
+    </div>
+
+    <div
+      id="projectName"
+      class="projectName">
+      Loading...
+    </div>
+
+    <div class="toolbarActions">
+
+      <button
+        id="newProject">
+        + New
+      </button>
+
+      <button
+        id="saveProject">
+        Save
+      </button>
+
+      <button
+        id="downloadProject"
+        class="primary">
+        Download
+      </button>
+
+      <button
+        id="settingsButton">
+        ⚙
+      </button>
+
+    </div>
+
+  </header>
+
+  <main class="workspace">
+
+    <aside class="sidebar">
+
+      <div class="sidebarTitle">
+        PROJECT FILES
+      </div>
+
+      <div
+        id="fileList"
+        class="fileList">
+      </div>
+
+      <button
+        id="addFile"
+        class="addFile">
+        + New File
+      </button>
+
+    </aside>
+
+    <section class="editorPanel">
+
+      <div class="fileHeader">
+
+        <span id="currentFile">
+          Select a file
+        </span>
+
+        <span
+          id="fileStatus">
+        </span>
+
+      </div>
+
+      <textarea
+        id="codeEditor"
+        spellcheck="false">
+      </textarea>
+
+      <div class="validationBar">
+
+        <span
+          id="validationStatus">
+          Ready
+        </span>
+
+        <button
+          id="validateButton">
+          Validate
+        </button>
+
+      </div>
+
+    </section>
+
+    <aside class="aiPanel">
+
+      <div class="aiHeader">
+        <strong>AI Assistant</strong>
+
+        <span>
+          GPT
+        </span>
+      </div>
+
+      <div
+        id="chat"
+        class="chat">
+      </div>
+
+      <div class="aiInput">
+
+        <textarea
+          id="aiPrompt"
+          placeholder="Ask AI to modify your extension...">
+        </textarea>
+
+        <div class="aiActions">
+
+          <button
+            id="fixButton">
+            🔧 Fix Errors
+          </button>
+
+          <button
+            id="askButton"
+            class="primary">
+            Send
+          </button>
+
+        </div>
+
+      </div>
+
+    </aside>
+
+  </main>
+
+  <script src="editor.js"></script>
+
+</body>
+</html>
