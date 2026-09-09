@@ -276,7 +276,7 @@ Planned
 Contributions are welcome!
 
 1. Fork the repository
-git clone https://github.com/YOUR_USERNAME/ai-extension-builder.git
+git clone https://github.com/Huzaifa-Bubere/ai-extension-builder.git
 
 2. Create a branch
 git checkout -b feature/my-feature
